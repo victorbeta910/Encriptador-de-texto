@@ -1,0 +1,128 @@
+body{
+    background: #FFFFFF;
+}
+.container{
+    background: #cccccc;
+    /*text-align: center;*/
+    width: 1000px;
+    height: 1000px;
+    margin: 20px auto;
+}
+.titulo{
+    text-align: left;
+    /*position: relative;*/
+    /*width: 120px;
+    height: 48px;*/
+}
+.titulo img{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.texto-izquierda{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.panel-derecho{
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.panel-derecho img{
+    /*position: absolute;*/
+    width: 336px;
+    height: 304px;
+    /*left: 750px;
+    top: 50px;*/
+}
+.botones{
+    text-align: left;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.botones .boton-desencriptar, .botones .boton-copiar, .botones .boton-encriptar{
+   
+
+    width: 120px;
+    height: 40px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 20px;
+    color: #cccccc;
+
+    /* Inside auto layout */
+
+    
+}
+.texto-izquierda .alert{
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #727374;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+.texto-izquierda .alert img{
+    width: 20px;
+    height: 20px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width:480px){
+
+    .container{
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .texto-izquierda{
+        
+        /*display: block;*/
+        width: auto;
+    }
+    .texto-izquierda .botones{
+        position: static;
+        text-align: center;
+        width: auto;
+    }
+    
+    .botones .boton-encriptar{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .botones .boton-desencriptar{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .botones .boton-copiar{
+        width: 100%;
+    }
+
+    .panel-derecho{
+        width: auto;
+        
+    }
+    
+    .panel-derecho #imagen-persona{
+        width: auto;
+        height: auto;
+    }
+    .panel-derecho #texto-encriptado{
+
+        width: auto;
+    }
+}
